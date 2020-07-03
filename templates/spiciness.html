@@ -6,23 +6,15 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="static/css/style.css?q={{now}}" type="text/css">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
 
 <body class="container text-center">
 
 	<h1>ROAST-etta Stone</h1>
 	<h3>Learn a New Language While Roasting your Friends</h3>
-	<form method = "post" action="/jokes" class="primary">
-		<h5>What language do you want to roast in?</h5>
-		<input type="radio" id="Spanish" name="language" value="Spanish">
-		<label for="Spanish">Spanish</label><br>
-		<input type="radio" id="Arabic" name="language" value="Arabic">
-		<label for="Arabic">Arabic</label><br>
-		<input type="radio" id="Hungarian" name="language" value="Hungarian">
-        <label for="Hungarian">Hungarian</label><br><br>
-		
-		<h5>Pick a savage level.</h5>
+	<form method = "post" action="/jokes">
+		<p>Pick a savage level.</p>
 		<input type="radio" id="mild" name="spiciness" value="mild">
 		<label for="mild">Mild</label><br>
 		<input type="radio" id="medium" name="spiciness" value="medium">
@@ -30,10 +22,6 @@
 		<input type="radio" id="spicy" name="spiciness" value="spicy">
         <label for="spicy">Spicy</label><br>
 		<input type="submit" value="Submit"/>
-    </form>
-
-
-<script type=“text/javascript” src="{{ url_for('static', filename='javascript/script.js') }}?q={{ now }}" defer></script>
 </body>
 
 </html>
